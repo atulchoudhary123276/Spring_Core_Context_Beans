@@ -1,0 +1,25 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:context="http://www.springframework.org/schema/context"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+      <context:annotation-config/>
+        <bean name="student" class="org.example.Student" >
+                <constructor-arg value="Atul"/>
+                <!--<property name="id" value="123"/>-->
+        </bean>
+
+   <bean name="add1" class="org.example.Address">
+        <constructor-arg value = "noida"/>
+        <constructor-arg value = "up"/>
+
+   </bean>
+<!--<bean name="add2" class="org.example.Address">-->
+<!--        <constructor-arg  value = "gzb"/>-->
+<!--        <constructor-arg value = "up"/>-->
+
+<!--</bean>-->
+</beans>
